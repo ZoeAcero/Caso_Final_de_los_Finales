@@ -111,4 +111,21 @@ b) El tipo de recursividad que se está empleando en este código es la recursiv
 
 
 
+###EJERCICIO 5 (APARTADO 2, PREGUNTA D):
+
+
+
+d) No, no necesitarás modificar los atributos timeline y tweets de la clase UserAccount para que contengan elementos de la clase Retweet.  La razón es que Retweet es una subclase de Tweet, lo que significa que un Retweet es un Tweet. En Java, puedes almacenar un objeto de una subclase en una variable de su superclase. Por lo tanto, puedes almacenar un Retweet en una lista de Tweet.  Esto es útil porque permite tratar a todos los tweets de la misma manera, independientemente de si son tweets normales, retweets o mensajes directos. Esto es un principio de la programación orientada a objetos llamado "polimorfismo".  Por lo tanto, no necesitas hacer ninguna modificación en los atributos timeline y tweets de la clase UserAccount. Puedes agregar Retweet y DirectMessage a estas listas tal como están.
+
+
+ No, no necesitarás modificar el método tweet(Tweet tweet1) de la clase UserAccount para que pueda enviar también objetos de tipo Retweet.  La razón es que Retweet es una subclase de Tweet, lo que significa que un Retweet es un Tweet. En Java, puedes pasar un objeto de una subclase a un método que espera un objeto de la superclase. Por lo tanto, puedes pasar un Retweet a un método que espera un Tweet.
+
+
+
+
+
+
+
+
+
 
