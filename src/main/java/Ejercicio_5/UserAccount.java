@@ -10,6 +10,10 @@ public class UserAccount {
     private Set<UserAccount> followers;
     private Set<UserAccount> following;
 
+    public List<Tweet> getTweets() {
+        return this.tweets;
+    }
+
     public UserAccount(String alias, String email) {
         if (!Utils.isValidEmail(email)) {
             throw new IllegalArgumentException("Invalid email");

@@ -7,6 +7,10 @@ public class Tweet {
     protected String message;
     protected UserAccount sender;
 
+    public String getMessage() {
+        return this.message;
+    }
+
     public Tweet(LocalDate time, String message, UserAccount sender) {
         if (message.length() > 140) {
             throw new IllegalArgumentException("Message exceeds the maximum length of 140 characters");
