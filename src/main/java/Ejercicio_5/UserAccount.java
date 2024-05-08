@@ -9,7 +9,7 @@ public class UserAccount {
     private List<Tweet> timeline;
     private Set<UserAccount> followers;
     private Set<UserAccount> following;
-    private static String password;
+    private  String password;
 
     public List<Tweet> getTweets() {
         return this.tweets;
@@ -32,6 +32,7 @@ public class UserAccount {
         this.timeline = new ArrayList<>();
         this.followers = new HashSet<>();
         this.following = new HashSet<>();
+        this.password = password;
     }
 
     public void follow(UserAccount other) {
