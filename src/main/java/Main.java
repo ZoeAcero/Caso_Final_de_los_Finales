@@ -7,7 +7,7 @@ public class Main {
     }
 
     public static int recursive(int a, int b) {
-        if (b == 0) {
+        if (b == 0 || b < 0) {
             return 1;
         } else if (a == 0) {
             return 0;
