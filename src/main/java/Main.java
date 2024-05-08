@@ -6,6 +6,7 @@ import Ejercicio_5.UserAccount;
 import java.util.Scanner;
 import Ejercicio_5.Tweet;
 import java.util.*;
+import Ejercicio_5.Email;
 
 public class Main {
     //ordenar por email
@@ -104,6 +105,24 @@ public class Main {
                     return;
                 default:
                     System.out.println("Opción no válida");
+
+
+                case 3: // Opción para enviar un correo electrónico
+                    System.out.print("Ingrese el destinatario del correo electrónico: ");
+                    String recipient = scanner.nextLine();
+                    System.out.print("Ingrese el asunto del correo electrónico: ");
+                    String subject = scanner.nextLine();
+                    System.out.print("Ingrese el cuerpo del correo electrónico: ");
+                    String body = scanner.nextLine();
+                    Email email = new Email(currentUser.getUsername(), recipient, subject, body);
+                    UserAccount recipientUser = findUser(users, recipient);
+                    if (recipientUser != null) {
+                        recipientUser.receiveEmail(email);
+                        System.out.println("Correo electrónico enviado exitosamente a " + recipient);
+                    } else {
+                        System.out.println("El destinatario no existe");
+                    }
+                    break;
             }
         }
     }
