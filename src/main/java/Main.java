@@ -13,4 +13,7 @@ public class Main {
                 UserAccount user = UserAccount.fromString(line);
                 users.add(user);
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 }
