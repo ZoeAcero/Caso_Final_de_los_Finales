@@ -15,4 +15,15 @@ public class Tweet {
         this.message = message;
         this.sender = sender;
     }
+
+    @Override
+    public String toString() {
+        return "Tweet{" +
+                "time=" + time +
+                ", message='" + message + '\'' +
+                ", sender=" + sender +
+                '}';
+    }
+
+
 }
