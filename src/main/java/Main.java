@@ -16,4 +16,13 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        public static UserAccount findUser(ArrayList<UserAccount> users, String username) {
+            for (UserAccount user : users) {
+                if (user.getUsername().equals(username)) {
+                    return user;
+                }
+            }
+            return null; // Devuelve null si no se encuentra el usuario
 }
+    }
