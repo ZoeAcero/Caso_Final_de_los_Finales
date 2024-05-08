@@ -66,6 +66,7 @@ public class Main {
                                 UserAccount newUser = new UserAccount(newUsername, email, password);
                                 users.add(newUser);
                                 System.out.println("Usuario registrado exitosamente: " + newUsername);
+                                System.out.println("Número de tweets publicados: " + newUser.getNumberOfTweets());
                                 break;
                             case 2:
                                 // Volver al menú principal
