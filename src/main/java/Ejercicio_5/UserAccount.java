@@ -14,7 +14,7 @@ public class UserAccount {
         return this.tweets;
     }
 
-    public UserAccount(String alias, String email) {
+    public UserAccount(String alias, String email, String password) {
         if (!Utils.isValidEmail(email)) {
             throw new IllegalArgumentException("Invalid email");
         }
@@ -56,7 +56,7 @@ public class UserAccount {
         String[] parts = line.split(",");
         String alias = parts[0];
         String email = parts[1];
-        UserAccount user = new UserAccount(alias, email);
+        UserAccount user = new UserAccount(alias, email, password);
         return user;
     }
 

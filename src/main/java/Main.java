@@ -50,8 +50,46 @@ public class Main {
                     currentUser = findUser(users, username);
                     if (currentUser == null) {
                         System.out.println("Usuario no encontrado");
+                        System.out.println("1. Sign up");
+                        System.out.println("2. Volver");
+                        System.out.print("Seleccione una opción: ");
+                        int subOption = scanner.nextInt();
+                        scanner.nextLine(); // consume newline left-over
+                        switch (subOption) {
+                            case 1:
+                                System.out.print("Ingrese el nombre de usuario: ");
+                                String newUsername = scanner.nextLine();
+                                System.out.print("Ingrese el correo electrónico: ");
+                                String email = scanner.nextLine();
+                                System.out.print("Ingrese la contraseña: ");
+                                String password = scanner.nextLine();
+                                UserAccount newUser = new UserAccount(newUsername, email, password);
+                                users.add(newUser);
+                                System.out.println("Usuario registrado exitosamente: " + newUsername);
+                                break;
+                            case 2:
+                                // Volver al menú principal
+                                break;
+                            default:
+                                System.out.println("Opción no válida");
+                        }
                     } else {
                         System.out.println("Usuario cargado: " + currentUser);
+                        System.out.println("1. Log in");
+                        System.out.println("2. Volver");
+                        System.out.print("Seleccione una opción: ");
+                        int subOption = scanner.nextInt();
+                        scanner.nextLine(); // consume newline left-over
+                        switch (subOption) {
+                            case 1:
+                                // Aquí puedes agregar el código para iniciar sesión con el usuario cargado
+                                break;
+                            case 2:
+                                // Volver al menú principal
+                                break;
+                            default:
+                                System.out.println("Opción no válida");
+                        }
                     }
                     break;
                 case 2:
