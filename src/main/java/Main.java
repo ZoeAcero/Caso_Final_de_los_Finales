@@ -8,10 +8,12 @@ import Ejercicio_5.Tweet;
 import java.util.*;
 
 public class Main {
+    //ordenar por email
     public static void sortUsersByEmail(ArrayList<UserAccount> users) {
         users.sort(Comparator.comparing(UserAccount::getUsername));
     }
 
+    //ordenar por longitud de los tweets
     public static void sortUsersByTweetLength(ArrayList<UserAccount> users) {
         users.sort(Comparator.comparingInt(user -> user.getTweets().stream()
                 .mapToInt(tweet -> tweet.getText().length())
@@ -31,7 +33,7 @@ public class Main {
         }
         sortUsersByEmail(users);
         sortUsersByTweetLength(users);
-        
+
 
         Scanner scanner = new Scanner(System.in);
         UserAccount currentUser = null;
