@@ -1,5 +1,7 @@
 package Ejercicio_5;
 
+import java.time.LocalDate;
+
 public class DirectMessage extends Tweet{
     private UserAccount receiver;
 
