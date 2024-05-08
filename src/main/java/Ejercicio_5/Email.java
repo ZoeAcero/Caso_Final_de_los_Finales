@@ -13,5 +13,21 @@ public class Email {
         this.body = body;
     }
 
-    
+    // Getters y Setters
+
+    public String getSender() {
+        return this.sender;
+    }
+
+    public void setSender(String sender) {
+        this.sender = sender;
+    }
+
+    public String getRecipient() {
+        return this.recipient;
+    }
+
+    public void setRecipient(String recipient) {
+        this.recipient = recipient;
+    }
 }
