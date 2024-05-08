@@ -32,4 +32,11 @@ public class UserAccount {
         this.following.add(other);
         other.followers.add(this);
     }
+
+    public void tweet(Tweet tweet) {
+        this.tweets.add(tweet);
+        for (UserAccount follower : this.followers) {
+            follower.timeline.add(tweet);
+        }
+    }
 }
