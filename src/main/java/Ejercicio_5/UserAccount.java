@@ -10,5 +10,11 @@ public class UserAccount {
     private Set<UserAccount> followers;
     private Set<UserAccount> following;
 
-    
+    public UserAccount(String alias, String email) {
+        if (!Utils.isValidEmail(email)) {
+            throw new IllegalArgumentException("Invalid email");
+        }
+        if (!Utils.isValidAlias(alias)) {
+            throw new IllegalArgumentException("Invalid alias");
+        }
 }
