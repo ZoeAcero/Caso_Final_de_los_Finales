@@ -29,4 +29,7 @@ public class UserAccount {
         if (this.following.contains(other)) {
             throw new IllegalArgumentException("You are already following this user");
         }
+        this.following.add(other);
+        other.followers.add(this);
+    }
 }
