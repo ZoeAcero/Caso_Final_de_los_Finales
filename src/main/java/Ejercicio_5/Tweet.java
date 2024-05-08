@@ -20,7 +20,7 @@ public class Tweet {
         if (text.length() > 140) {
             throw new IllegalArgumentException("El tweet no puede tener más de 140 caracteres");
         }
-        this.text = text;
+        this.message = text;
     }
 
     @Override
