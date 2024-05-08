@@ -17,4 +17,12 @@ public class UserAccount {
         if (!Utils.isValidAlias(alias)) {
             throw new IllegalArgumentException("Invalid alias");
         }
+        this.alias = alias;
+        this.email = email;
+        this.tweets = new ArrayList<>();
+        this.timeline = new ArrayList<>();
+        this.followers = new HashSet<>();
+        this.following = new HashSet<>();
+    }
+}
 }
