@@ -9,4 +9,12 @@ public class DirectMessage extends Tweet{
         super(time, message, sender);
         this.receiver = receiver;
     }
+
+    @Override
+    public String toString() {
+        return "DirectMessage{" +
+                "receiver=" + receiver +
+                ", " + super.toString() +
+                '}';
+    }
 }
