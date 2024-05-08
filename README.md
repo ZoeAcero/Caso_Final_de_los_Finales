@@ -6,7 +6,7 @@ https://github.com/ZoeAcero/Caso_Final_de_los_Finales.git
 
 
 
-EJERCICIO 1:
+###EJERCICIO 1:
 
 
 1) La correcta es la opción b
@@ -21,7 +21,7 @@ EJERCICIO 1:
 
 
 
-EJERCICIO 3:
+###EJERCICIO 3:
 
 
 a) El código si se ejecutaría pero no imprimiría nada, pasa que el código se atasca en un ciclo que nunca termina porque el segundo número que le pasamos, llamado b, siempre es negativo y nunca llega a ser cero. Por eso, el código sigue llamando a la función recursiva con b disminuyendo en uno, pero como b es negativo, disminuirlo en uno lo hace aún más negativo, no lo acerca a cero. Y como la función recursiva solo se detiene cuando b es cero, nunca deja de llamarse a sí misma.
@@ -42,7 +42,7 @@ b) Este código está tratando de calcular el resultado de elevar a a la potenci
 
 
 
-EJERCICIO 4 (SEGUNDA PREGUNTA DESPÉS DEL CÓDIGO):
+###EJERCICIO 4 (SEGUNDA PREGUNTA DESPÉS DEL CÓDIGO):
 
 
 
