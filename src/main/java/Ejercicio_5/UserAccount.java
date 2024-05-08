@@ -71,4 +71,8 @@ public class UserAccount {
     public String getUsername() {
         return this.alias;
     }
+
+    public int getNumberOfTweets() {
+        return this.tweets.size();
+    }
 }
