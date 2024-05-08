@@ -11,7 +11,7 @@ public class Main {
     public static void sortUsersByEmail(ArrayList<UserAccount> users) {
         users.sort(Comparator.comparing(UserAccount::getUsername));
     }
-    
+
     public static void main(String[] args) {
         ArrayList<UserAccount> users = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader("users.txt"))) {
@@ -23,6 +23,7 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        sortUsersByEmail(users);
 
         Scanner scanner = new Scanner(System.in);
         UserAccount currentUser = null;
