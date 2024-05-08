@@ -16,7 +16,7 @@ public class Main {
     //ordenar por longitud de los tweets
     public static void sortUsersByTweetLength(ArrayList<UserAccount> users) {
         users.sort(Comparator.comparingInt(user -> user.getTweets().stream()
-                .mapToInt(tweet -> tweet.getText().length())
+                .mapToInt(tweet -> tweet.getMessage().length())
                 .sum()));
     }
 
