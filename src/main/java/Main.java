@@ -30,6 +30,8 @@ public class Main {
             e.printStackTrace();
         }
         sortUsersByEmail(users);
+        sortUsersByTweetLength(users);
+        
 
         Scanner scanner = new Scanner(System.in);
         UserAccount currentUser = null;
