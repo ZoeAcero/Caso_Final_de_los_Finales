@@ -9,9 +9,14 @@ public class UserAccount {
     private List<Tweet> timeline;
     private Set<UserAccount> followers;
     private Set<UserAccount> following;
+    private String password;
 
     public List<Tweet> getTweets() {
         return this.tweets;
+    }
+
+    public String getPassword() {
+        return this.password;
     }
 
     public UserAccount(String alias, String email, String password) {
