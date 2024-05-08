@@ -42,5 +42,17 @@ b) Este código está tratando de calcular el resultado de elevar a a la potenci
 
 
 
+EJERCICIO 4 (SEGUNDA PREGUNTA DESPÉS DEL CÓDIGO):
+
+
+
+b) El tipo de recursividad que se está empleando en este código es la recursividad de cola, también conocida como recursión de cola. Esto se debe a que la llamada recursiva (en la línea return n % 10 + sumOfDigits(n / 10)) es la última operación realizada en la función antes de devolver un valor.
+
+  La función sumOfDigits recorre los dígitos del número n y suma cada uno de ellos. La cantidad de llamadas recursivas que realiza está determinada por el número de dígitos en n. Por lo tanto, la complejidad computacional de este algoritmo es lineal en función del 
+  número de dígitos de n, lo que se denota como O(d), donde "d" es la cantidad de dígitos de n. Esto significa que la complejidad crece de manera proporcional al número de dígitos de n.
+
+
+
+
 
 
