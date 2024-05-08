@@ -47,4 +47,12 @@ public class UserAccount {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+    public static UserAccount fromString(String line) {
+        String[] parts = line.split(",");
+        String alias = parts[0];
+        String email = parts[1];
+        UserAccount user = new UserAccount(alias, email);
+        return user;
+    }
 }
