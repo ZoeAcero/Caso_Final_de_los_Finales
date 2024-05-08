@@ -9,7 +9,7 @@ public class UserAccount {
     private List<Tweet> timeline;
     private Set<UserAccount> followers;
     private Set<UserAccount> following;
-    private String password;
+    private static String password;
 
     public List<Tweet> getTweets() {
         return this.tweets;
