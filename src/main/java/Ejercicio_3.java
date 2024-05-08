@@ -1,6 +1,4 @@
-import java.util.*;
-
-public class Main {
+public class Ejercicio_3 {
     public static void main(String[] args) {
         int a = recursive(1, -2);
         System.out.println(a);
