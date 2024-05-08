@@ -30,4 +30,22 @@ public class Email {
     public void setRecipient(String recipient) {
         this.recipient = recipient;
     }
+
+    public String getSubject() {
+        return this.subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getBody() {
+        return this.body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    
 }
