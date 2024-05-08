@@ -12,6 +12,12 @@ public class Main {
         users.sort(Comparator.comparing(UserAccount::getUsername));
     }
 
+    public static void sortUsersByTweetLength(ArrayList<UserAccount> users) {
+        users.sort(Comparator.comparingInt(user -> user.getTweets().stream()
+                .mapToInt(tweet -> tweet.getText().length())
+                .sum()));
+    }
+
     public static void main(String[] args) {
         ArrayList<UserAccount> users = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader("users.txt"))) {
