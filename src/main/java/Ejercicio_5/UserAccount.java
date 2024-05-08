@@ -39,4 +39,12 @@ public class UserAccount {
             follower.timeline.add(tweet);
         }
     }
+
+    @Override
+    public String toString() {
+        return "UserAccount{" +
+                "alias='" + alias + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
