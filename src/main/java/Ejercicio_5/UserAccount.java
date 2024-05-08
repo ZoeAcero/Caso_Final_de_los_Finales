@@ -10,6 +10,11 @@ public class UserAccount {
     private Set<UserAccount> followers;
     private Set<UserAccount> following;
     private  String password;
+    private List<Email> inbox;
+
+    public List<Email> getInbox() {
+        return this.inbox;
+    }
 
     public List<Tweet> getTweets() {
         return this.tweets;
