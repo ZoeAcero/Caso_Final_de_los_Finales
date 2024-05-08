@@ -16,6 +16,14 @@ public class UserAccount {
         return this.inbox;
     }
 
+    public void receiveEmail(Email email) {
+        this.inbox.add(email);
+    }
+
+    public int getNumberOfEmails() {
+        return this.inbox.size();
+    }
+
     public List<Tweet> getTweets() {
         return this.tweets;
     }
