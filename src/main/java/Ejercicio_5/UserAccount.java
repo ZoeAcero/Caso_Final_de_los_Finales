@@ -24,4 +24,9 @@ public class UserAccount {
         this.followers = new HashSet<>();
         this.following = new HashSet<>();
     }
+
+    public void follow(UserAccount other) {
+        if (this.following.contains(other)) {
+            throw new IllegalArgumentException("You are already following this user");
+        }
 }
