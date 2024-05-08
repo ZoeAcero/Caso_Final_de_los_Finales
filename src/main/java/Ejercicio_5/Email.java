@@ -6,5 +6,12 @@ public class Email {
     private String subject;
     private String body;
 
+    public Email(String sender, String recipient, String subject, String body) {
+        this.sender = sender;
+        this.recipient = recipient;
+        this.subject = subject;
+        this.body = body;
+    }
+
     
 }
