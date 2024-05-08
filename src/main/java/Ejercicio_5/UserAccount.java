@@ -55,4 +55,9 @@ public class UserAccount {
         UserAccount user = new UserAccount(alias, email);
         return user;
     }
+
+
+    public String getUsername() {
+        return this.alias;
+    }
 }
