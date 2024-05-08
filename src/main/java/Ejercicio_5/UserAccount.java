@@ -62,6 +62,7 @@ public class UserAccount {
         String[] parts = line.split(",");
         String alias = parts[0];
         String email = parts[1];
+        String password = parts[2];
         UserAccount user = new UserAccount(alias, email, password);
         return user;
     }
