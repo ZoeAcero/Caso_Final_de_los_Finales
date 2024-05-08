@@ -16,6 +16,9 @@ public class Tweet {
         this.sender = sender;
     }
 
+    public Tweet(String text) {
+    }
+
     @Override
     public String toString() {
         return "Tweet{" +

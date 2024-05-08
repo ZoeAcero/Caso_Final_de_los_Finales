@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import Ejercicio_5.UserAccount;
 import java.util.Scanner;
+import Ejercicio_5.Tweet;
 
 public class Main {
     public static void main(String[] args) {
@@ -53,5 +54,14 @@ public class Main {
             }
         }
         return null; // Devuelve null si no se encuentra el usuario
+    }
+
+    public static void postTweet(UserAccount user, String text) {
+        try {
+            Tweet tweet = new Tweet(text);
+            user.tweet(tweet);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 }
