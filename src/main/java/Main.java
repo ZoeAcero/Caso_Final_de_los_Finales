@@ -82,7 +82,13 @@ public class Main {
                         scanner.nextLine(); // consume newline left-over
                         switch (subOption) {
                             case 1:
-                                // Aquí puedes agregar el código para iniciar sesión con el usuario cargado
+                                System.out.print("Ingrese la contraseña: ");
+                                String enteredPassword = scanner.nextLine();
+                                if (currentUser.getPassword().equals(enteredPassword)) {
+                                    System.out.println("Inicio de sesión exitoso");
+                                } else {
+                                    System.out.println("Contraseña incorrecta");
+                                }
                                 break;
                             case 2:
                                 // Volver al menú principal
